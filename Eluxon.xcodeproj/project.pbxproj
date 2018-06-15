@@ -12,6 +12,8 @@
 		CCA6E2C72016349A00DE6C75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCA6E2C52016349A00DE6C75 /* Main.storyboard */; };
 		CCA6E2C92016349A00DE6C75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCA6E2C82016349A00DE6C75 /* Assets.xcassets */; };
 		CCA6E2CC2016349A00DE6C75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCA6E2CA2016349A00DE6C75 /* LaunchScreen.storyboard */; };
+		CCA6E2D6201638AA00DE6C75 /* SwitchStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA6E2D5201638AA00DE6C75 /* SwitchStatus.swift */; };
+		CCA6E2D8201638EF00DE6C75 /* Toggleable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA6E2D7201638EF00DE6C75 /* Toggleable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		CCA6E2C82016349A00DE6C75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCA6E2CB2016349A00DE6C75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CCA6E2CD2016349A00DE6C75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCA6E2D5201638AA00DE6C75 /* SwitchStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchStatus.swift; sourceTree = "<group>"; };
+		CCA6E2D7201638EF00DE6C75 /* Toggleable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toggleable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 		CCA6E2C02016349A00DE6C75 /* Eluxon */ = {
 			isa = PBXGroup;
 			children = (
+				CCA6E2D42016388B00DE6C75 /* Protocols */,
+				CCA6E2D32016388400DE6C75 /* Enums */,
 				CCA6E2C12016349A00DE6C75 /* AppDelegate.swift */,
 				CCA6E2C32016349A00DE6C75 /* ViewController.swift */,
 				CCA6E2C52016349A00DE6C75 /* Main.storyboard */,
@@ -62,6 +68,22 @@
 				CCA6E2CD2016349A00DE6C75 /* Info.plist */,
 			);
 			path = Eluxon;
+			sourceTree = "<group>";
+		};
+		CCA6E2D32016388400DE6C75 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				CCA6E2D5201638AA00DE6C75 /* SwitchStatus.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		CCA6E2D42016388B00DE6C75 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CCA6E2D7201638EF00DE6C75 /* Toggleable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +159,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCA6E2C42016349A00DE6C75 /* ViewController.swift in Sources */,
+				CCA6E2D8201638EF00DE6C75 /* Toggleable.swift in Sources */,
 				CCA6E2C22016349A00DE6C75 /* AppDelegate.swift in Sources */,
+				CCA6E2D6201638AA00DE6C75 /* SwitchStatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
